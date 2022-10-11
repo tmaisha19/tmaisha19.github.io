@@ -10,7 +10,6 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: all .2s linear;
     line-height: 1.5;
 }
@@ -36,6 +35,7 @@ section{
     padding-bottom: 1rem;
     color:#111;
     text-transform: uppercase;
+    margin-top: 50px;
 }
 
 .heading span{
@@ -165,7 +165,7 @@ header .follow a:hover{
 }
 
 .home .image img{
-    width: 300pt;
+    width: 250pt;
     border-radius: 100pt;
     float: right;
     margin-right:40pt;}
@@ -197,11 +197,14 @@ header .follow a:hover{
 }
 
 .home .content .text{
-    font-size: 1.7rem;
+    font-size: 30px;
     color:#666;
     padding:.5rem 0;
+    
 }
-
+.typewrite{
+    color:#e38528;
+}
 .about .row-1{
     display: flex;
     flex-wrap: wrap;
@@ -245,7 +248,7 @@ header .follow a:hover{
 }
 
 .about .row-1 .content .box-container .box{
-    flex:1 1 20rem;
+    flex:1 1 10rem;
 }
 
 .about .row-1 .content .box-container .box span{
@@ -452,6 +455,40 @@ header .follow a:hover{
     background:var(--main-color);
     color:#fff;
 }
+/* course */
+.course .box{
+    position: relative;
+    flex:1 1 33rem;
+    border-left: .2rem solid var(--main-color);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+     
+}
+
+.course .box::before{
+    content: '';
+    position: absolute;
+    top:20; left:-1rem;
+    height:2rem;
+    width:2rem;
+    border-radius: 50%;
+    background:var(--main-color);
+    margin-top: 20px;
+}
+
+.course.box .content{
+    background:#fff;
+    padding:1.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+.course .box .content h3{
+    font-size: 25px;
+    padding:.5rem 0;
+    color:#111;
+}
+/* end */
 
 .contact .icons-container{
     display: flex;
